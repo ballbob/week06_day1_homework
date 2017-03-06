@@ -12,4 +12,14 @@ public class PsychicWeirdo{
     return this.name;  
   }
 
+  public int schoolHeadCount(){
+    int count = 0;
+    for(Cyclops cyclops : school){
+      if (cyclops != null){
+        count++;
+      }
+    }
+    return count;
+  }
+
 }

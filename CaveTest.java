@@ -49,4 +49,9 @@ import org.junit.*;
       assertEquals("Charles",charles.getName());
     }
 
+    @Test
+    public void weirdoSchoolStartsEmpty(){
+      assertEquals(0,charles.schoolHeadCount());
+    }
+
   }

@@ -54,4 +54,10 @@ import org.junit.*;
       assertEquals(0,charles.schoolHeadCount());
     }
 
+    @Test
+    public void weirdoCanAdoptCyclops(){
+      charles.adopt(cyclops);
+      assertEquals(1,charles.schoolHeadCount());
+    }
+
   }

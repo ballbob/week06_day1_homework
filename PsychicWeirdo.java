@@ -22,4 +22,16 @@ public class PsychicWeirdo{
     return count;
   }
 
+  public boolean schoolAtCapacity(){
+    return schoolHeadCount() == school.length;
+  }
+
+  public void adopt(Cyclops cyclops){
+    if (schoolAtCapacity()){
+      return;
+    }
+    int index = this.schoolHeadCount();
+    school[index] = cyclops;
+  }
+
 }

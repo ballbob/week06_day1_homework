@@ -27,4 +27,12 @@ import org.junit.*;
       assertEquals(1,cave.headCount());
     }
 
+    @Test 
+    public void cyclopesCantEnterIfAtCapacity(){
+      for (int i=0; i<11; i++) {
+        cave.welcome(cyclops);
+      }
+      assertEquals(10,cave.headCount());
+    }
+
   }

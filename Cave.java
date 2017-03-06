@@ -22,7 +22,14 @@ public class Cave {
     return count;
   }
 
+  public boolean isAtCapacity(){
+    return headCount() == population.length;
+  }
+
   public void welcome(Cyclops cyclops){
+    if (isAtCapacity()){
+      return; 
+    }
     int index = this.headCount();
     population[index] = cyclops;
   }

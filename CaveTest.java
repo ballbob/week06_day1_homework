@@ -4,11 +4,13 @@ import org.junit.*;
   public class CaveTest {
     Cave cave;
     Cyclops cyclops;
+    PsychicWeirdo charles;
 
     @Before
     public void before(){
       cave = new Cave("South Sicily Coastal Caves");
       cyclops = new Cyclops();
+      charles = new PsychicWeirdo("Charles");
     }
 
     @Test 
@@ -42,6 +44,9 @@ import org.junit.*;
       assertEquals(0,cave.headCount());
     }
 
-    
+    @Test
+    public void getWeirdoName(){
+      assertEquals("Charles",charles.getName());
+    }
 
   }

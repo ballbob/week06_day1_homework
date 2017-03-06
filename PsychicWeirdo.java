@@ -34,4 +34,12 @@ public class PsychicWeirdo{
     school[index] = cyclops;
   }
 
+  public void adoptFromCave(Cave cave,Cyclops cyclops){
+    if (schoolAtCapacity()){
+      return;
+    }
+    int index = this.schoolHeadCount();
+    school[index] = cyclops;
+    cave.exit(cyclops);
+  }
 }

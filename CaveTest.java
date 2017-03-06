@@ -60,4 +60,18 @@ import org.junit.*;
       assertEquals(1,charles.schoolHeadCount());
     }
 
+    @Test 
+    public void caveCanAllowExit(){
+      cave.exit(cyclops);
+      assertEquals(0,cave.headCount());
+    }
+
+
+    @Test
+    public void weirdoCanAdoptFromCave(){
+      cave.welcome(cyclops);
+      charles.adoptFromCave(cave,cyclops);
+      assertEquals(1,charles.schoolHeadCount());
+    }
+
   }

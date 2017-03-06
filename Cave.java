@@ -39,4 +39,9 @@ public class Cave {
       population[i] = null;
   }
 
+  public void exit(Cyclops cyclops){
+    int index = headCount();
+    population[index] = null;
+  }
+
 }

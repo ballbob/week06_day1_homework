@@ -20,4 +20,11 @@ import org.junit.*;
     public void caveIsEmptyAtFirst(){
       assertEquals(0, cave.headCount());
     }
+
+    @Test
+    public void caveWelcomedOne(){
+      cave.welcome(cyclops);
+      assertEquals(1,cave.headCount());
+    }
+
   }

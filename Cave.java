@@ -22,4 +22,9 @@ public class Cave {
     return count;
   }
 
+  public void welcome(Cyclops cyclops){
+    int index = this.headCount();
+    population[index] = cyclops;
+  }
+
 }

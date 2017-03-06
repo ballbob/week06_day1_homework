@@ -15,4 +15,9 @@ import org.junit.*;
     public void caveName(){
       assertEquals("South Sicily Coastal Caves", cave.caveName());
     }
+
+    @Test
+    public void caveIsEmptyAtFirst(){
+      assertEquals(0, cave.headCount());
+    }
   }

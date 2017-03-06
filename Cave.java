@@ -12,4 +12,14 @@ public class Cave {
     return this.name;
   }
 
+  public int headCount(){
+    int count = 0;
+    for (Cyclops cyclops : population) {
+      if (cyclops != null) {
+        count++;
+      }
+    }
+    return count;
+  }
+
 }

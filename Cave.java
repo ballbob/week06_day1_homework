@@ -34,4 +34,9 @@ public class Cave {
     population[index] = cyclops;
   }
 
+  public void evacuate(){
+    for (int i=0; i< population.length; i++)
+      population[i] = null;
+  }
+
 }

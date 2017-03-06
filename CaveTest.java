@@ -35,4 +35,11 @@ import org.junit.*;
       assertEquals(10,cave.headCount());
     }
 
+    @Test
+    public void canCyclopesEvacuateCave(){
+      cave.welcome(cyclops);
+      cave.evacuate();
+      assertEquals(0,cave.headCount());
+    }
+
   }
